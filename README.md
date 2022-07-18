@@ -1,9 +1,9 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Slides Of FrontEnd
 
 To start the slide show:
 
 - `npm install`
-- `npm run dev`
+- `npm run dev` // or some specified md file
 - visit http://localhost:3030
 
 Edit the [slides.md](./slides.md) to see the changes.
