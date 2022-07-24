@@ -61,6 +61,65 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
+# 
+
+CSS (cascading style sheets): The language used to create the layout, color, style, and so on of the pages you create with HTML
+
+Frameworks: A platform for developing software consistently, efficiently, and accurately
+
+HTML (hypertext markup language): The basic building block needed to develop websites, a language that allows you to make notes in digital documents that are different from regular text
+
+JavaScript: The programming language of developers that determines what the page will do
+
+UI (user interface): The graphical layout of an application
+
+UX (user experience): How a user interacts with the application
+
+Version control: The process of tracking and controlling changes to your source code
+
+---
+
+Optimizing the user experience.
+
+Using HTML, JavaScript and CSS to bring concepts to life.
+
+Developing and maintaining the user interface.
+
+Implementing design on mobile websites.
+
+Creating tools that improve site interaction regardless of the browser.
+
+Managing software workflow.
+
+Following SEO best practices.
+
+Fixing bugs and testing for usability.
+
+---
+
+Soft Skills
+Technical competency alone isn’t enough to succeed in a front-end role. Mathematical, analytical, creativity, design, and problem-solving skills are a must in any software development job. And soft skills are even more critical in a digital-first or digital-only environment.
+
+Employers may put even more stock into developers with strong soft skills, such as:
+
+Time management
+Communication
+Project management
+Creativity
+Problem solving skills
+
+
+
+https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer
+
+
+Web3.0 Blockchain, IoT, AR/VR, 3D(BIM, GeoMap, etc), AI-Web, Mobile App/Web,
+
+
+AI-Web: voice commands, smart recommendation algorithms, automated coding, testing, writing, VR
+
+---
+
 # What is Slidev?
 
 Slidev is a slides maker and presenter designed for developers, consist of the following features
