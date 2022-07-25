@@ -49,7 +49,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# Aganda
+# 目录
 
 1. 前端定义
 
@@ -61,7 +61,28 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# 
+
+# 做什么
+
+- Optimizing the user experience.
+
+- Using HTML, JavaScript and CSS to bring concepts to life.
+
+- Developing and maintaining the user interface.
+
+- Implementing design on mobile websites.
+
+- Creating tools that improve site interaction regardless of the browser.
+
+- Managing software workflow.
+
+- Following SEO best practices.
+
+- Fixing bugs and testing for usability.
+
+---
+
+# 怎么做
 
 CSS (cascading style sheets): The language used to create the layout, color, style, and so on of the pages you create with HTML
 
@@ -76,24 +97,6 @@ UI (user interface): The graphical layout of an application
 UX (user experience): How a user interacts with the application
 
 Version control: The process of tracking and controlling changes to your source code
-
----
-
-Optimizing the user experience.
-
-Using HTML, JavaScript and CSS to bring concepts to life.
-
-Developing and maintaining the user interface.
-
-Implementing design on mobile websites.
-
-Creating tools that improve site interaction regardless of the browser.
-
-Managing software workflow.
-
-Following SEO best practices.
-
-Fixing bugs and testing for usability.
 
 ---
 
