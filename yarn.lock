@@ -44,10 +44,59 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/file-icons@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/file-icons/-/file-icons-1.1.2.tgz#1a0d86bcb3a826f9d921bda1fe6509d0525abc4e"
+  integrity sha512-MTthXtfLgeM4CLETZEUNQ2R5Xlx2rIhrHeNZU6mpTdMu/wUVskZehKTHWT5+aG1Cwvckpw3Cm1Bz53yDgTvnBA==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/icon-park-outline@^1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@iconify-json/icon-park-outline/-/icon-park-outline-1.1.5.tgz#b86b7bab79dc046c3ec606689ce10a9ddc2dcfed"
+  integrity sha512-OINrvalE6fo5rtVdCkI5VU5wka+DV0VV7Yrweh7WXDUgSeh1rdQ9v8KmePE+M/0J+NTXoCeq7nKTE+R33Vrqiw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/logos@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iconify-json/logos/-/logos-1.1.13.tgz#75d698275cfa95fc135ce8b9f2bc2945b025ac5f"
+  integrity sha512-OHZRQT2e4O9414XZ7U+dEbVMxGQUIuDZCxcA7odIOkdtX+VfoaySRbzd4CFxKMie4oV+8HwG8PyVYPpDT10RJA==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify-json/ph@^1.1.2":
   version "1.1.2"
   resolved "https://registry.npmmirror.com/@iconify-json/ph/-/ph-1.1.2.tgz#8827e1ef5ce814941faa992453a955103788cb54"
   integrity sha512-NuTdtt/UmuxIHS4hfdyv3BP5JiWikNkr81hFHXDScXlH0GUMdRSY/B5T9vDvbXDY/esMLFnIAXoFVDLsGinhpw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/prime@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/prime/-/prime-1.1.2.tgz#467e5c385dfc8cb30d89b89257dd971e9ae8987f"
+  integrity sha512-Uwztw/MefCZCOzX+rO/9XR/CBWWwN9CALhiX2K3/JUZCu0OpgAFB5KN88o/q6vkG5/6rZy/u0nO3l+NQud5Saw==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/simple-icons@^1.1.20":
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/@iconify-json/simple-icons/-/simple-icons-1.1.20.tgz#80fca66aa946cab62a46292e78c77e8b1d7fc7f8"
+  integrity sha512-IP5yZAoRU82fR5szwbBLnECWgY4JuZDgqEEXzioaOFygqZRP8Ku9ONgPK/qe2vwsUB6RWM5jTm0S4KHtMiTOEQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/uim@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@iconify-json/uim/-/uim-1.1.2.tgz#027ffa2cee1f4581d83f5bfe05bdfb56b2ef597d"
+  integrity sha512-y30D/pUfqyIdKxIR+xOthDiQPSTRIM9cOy8PIOmeuTgh4Yc8gTwL8kWuoDenVxPhk0fXsRw16bn441PK6iuDTQ==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/vscode-icons@^1.1.8":
+  version "1.1.8"
+  resolved "https://registry.yarnpkg.com/@iconify-json/vscode-icons/-/vscode-icons-1.1.8.tgz#9d05129b157d9190d93ec147d0c03627462f3258"
+  integrity sha512-hrx5BJMXKsaNJgvJRmKi1QlTNEnqWcIDupJLNaZ00RIz+B4GoEKNY6RiT1+rX/vK3oQCbn+G2XAcvwmDDlQnZg==
   dependencies:
     "@iconify/types" "*"
 

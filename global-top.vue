@@ -1,3 +1,5 @@
 <template>
-  <footer class="absolute bottom-0 left-0 right-0 p-2">Made By Lusai</footer>
+  <footer class="absolute bottom-0 right-8 p-2 text-gray-300">
+    Made By Lusai
+  </footer>
 </template>
