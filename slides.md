@@ -21,7 +21,7 @@ drawings:
   persist: false
 # use UnoCSS (experimental)
 css: unocss
-download: true
+download: false
 ---
 
 # 前端概览
