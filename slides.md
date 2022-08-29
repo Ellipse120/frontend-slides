@@ -349,7 +349,34 @@ WebGL:
 GIS, BIM etc
 
 AI: 
-Voice Commands, Smart Recommendation Algorithms, Automated Coding -->
+Voice Commands, Smart Recommendation Algorithms, Automated Coding 
+
+AR/VR
+
+https://www.apple.com/imac-24/  手机或者平板打开，体验AR
+
+https://ar-js-org.github.io/AR.js-Docs/
+https://ar-js-org.github.io/AR.js-Docs/ui-events/
+
+
+AI
+使用场景：
+
+[使用机器学习通过网页预取来加速您的网站](https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html)
+根据用户使用习惯，预测用户行为，预加载相应资源，提高网站使用体验 https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html
+
+https://www.tensorflow.org/js/demos
+
+https://youtu.be/T2qQGqZxkD0  teachable machine
+
+
+Automated Coding
+[Github Copilot](https://github.com/features/copilot), [Tabnine](https://www.tabnine.com/)
+
+GIS 
+[ArcGIS](https://esri.github.io/building-viewer/)
+
+-->
 
 ---
 layout: center
