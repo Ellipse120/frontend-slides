@@ -336,19 +336,20 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 # 未来
 
-- WebGL: GIS, BIM etc
+- WebGL
 
 - DAPPS
 
 - AI based web
 
-- Voice Commands
-
-- Smart Recommendation Algorithms
-
-- Automated Coding
-
 - AR/VR
+
+<!-- 
+WebGL:
+GIS, BIM etc
+
+AI: 
+Voice Commands, Smart Recommendation Algorithms, Automated Coding -->
 
 ---
 layout: center
