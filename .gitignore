@@ -6,3 +6,4 @@ public/index.html
 .remote-assets
 components.d.ts
 .idea
+package-lock.json

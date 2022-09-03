@@ -181,7 +181,10 @@ image: https://images.unsplash.com/photo-1591267990439-bc68529677c3?ixlib=rb-1.2
 
 
 
-用户输入内容通过前端接收并在程序或网站的后端进行处理。 后端代码读取和写入数据并通过前端将输出发送给用户。 由于应用程序或网站的后端和前端协同工作，因此软件工作通常需要前端和后端开发。  -->
+用户输入内容通过前端接收并在程序或网站的后端进行处理。 后端代码读取和写入数据并通过前端将输出发送给用户。 由于应用程序或网站的后端和前端协同工作，因此软件工作通常需要前端和后端开发。
+
+可以打开一些网站欣赏，可以演示如何下载bing高清图片
+-->
 
 ---
 
@@ -193,8 +196,6 @@ image: https://images.unsplash.com/photo-1591267990439-bc68529677c3?ixlib=rb-1.2
 
 - 网站响应式设计(Responsive Web Design，RWD)
 
-- 管理自己软件开发工作流程
-
 - 遵循最佳实践
 
 - 修复错误并测试可用性
@@ -205,11 +206,14 @@ image: https://images.unsplash.com/photo-1591267990439-bc68529677c3?ixlib=rb-1.2
 网站响应式设计：早年设计 Web 时，页面是以适配特定的屏幕大小为考量创建的。如果用户正在使用比设计者考虑到的更小或者更大的屏幕，那么结果从多余的滚动条，到过长的行和没有被合理利用的空间，不一而足。随着人们使用的屏幕尺寸的种类越来越多，出现了响应式网页设计的概念（responsive web design，RWD），RWD 指的是允许 Web 页面适应不同屏幕宽度因素等，用户操作反馈，进行布局和外观的调整的一系列实践。响应式 Web 设计不是单独的技术，它是描述 Web 设计的一种方式、或者是一组最佳实践的一个词，它是用来建立可以响应查看内容的设备的样式的一个词。做响应式设计时，会用到：1. 媒体查询(Media Query)；2. 现代布局技术(Multiple-column layout, Flexbox, Grid); 3. 响应式图像、排版;4. viewport视窗元标签。
 
 
-管理自己软件开发工作流程：软件开发过程中，经常会有中断，会议等穿插进来，会干扰开发节奏，我们应该培养自己的开发节奏，尽可能减少中断带来的影响。
+管理自己软件开发工作流程：软件开发过程中，经常会有中断，会议等穿插进来，会干扰开发节奏，我们应该培养自己的开发节奏，尽可能减少中断带来的影响。目前使用禅道管理项目，敏捷管理模式，本来一个8h的任务，如果被耽误比较久，就要按照实际填写工时，
+时间需要自己来安排
 
 遵循最佳实践：一般是一些经验提炼，规范定义。比如语义化，可以提高网站SEO的打分，代码可读性高。A11y是无障碍访问的简写，为有访问网站障碍的用户考虑，利于屏幕阅读器理解区分。
 
 交付质量：是开发者的名片，交付前应该仔细自测，如果测试同事写了测试用例，最好能够自己跑一遍测试用例，保证模块高质量交付。
+
+响应式网站演示：apple官网， a11y用12306演示
 
  -->
 ---
@@ -258,6 +262,7 @@ CSS: 为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体�
 JS: 控制网页行为，需要了解数据类型，DOM，Document，异步JavaScript，浏览器API等。ECMA262是Js的标准，每年都提案新的特性，然后会被浏览器厂商实现，
 
 Framework: 公司以Vuejs2生态工具作为主要框架，前端组基于Vue2做了脚手架工具，集成了项目中会用到的组件、工具库、代码生成器等功能。还有基于Vue3的Nuxt3框架，框架的合理使用可以提高开发效率，提升DX开发体验
+使用12306演示 什么是html，css，js相应的作用，framework效果，演示原生手写简单demo，然后框架写相同功能作为对比说明框架作用
 
 UI/UX: 用户界面及交互会先由设计人员根据需求进行设计，定义交互方式，定稿后交给前端开发人员，开发网页还原设计稿内容
 
@@ -265,7 +270,7 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
  -->
 
---- 
+---
 
 # 软技能
 
@@ -344,7 +349,7 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 - AR/VR
 
-<!-- 
+<!--
 WebGL:
 GIS, BIM etc
 
@@ -363,19 +368,15 @@ AI
 使用场景：
 
 [使用机器学习通过网页预取来加速您的网站](https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html)
-根据用户使用习惯，预测用户行为，预加载相应资源，提高网站使用体验 https://blog.tensorflow.org/2021/05/speed-up-your-sites-with-web-page-prefetching-using-ml.html
+根据用户使用习惯，预测用户行为，预加载相应资源，提高网站使用体验
 
 https://www.tensorflow.org/js/demos
-
-https://youtu.be/T2qQGqZxkD0  teachable machine
-
 
 Automated Coding
 [Github Copilot](https://github.com/features/copilot), [Tabnine](https://www.tabnine.com/)
 
 GIS 
 [ArcGIS](https://esri.github.io/building-viewer/)
-
 -->
 
 ---
@@ -387,4 +388,3 @@ layout: center
 <h1>感谢
 <twemoji:winking-face class="ml-4 animate-pulse" />
 </h1>
-
