@@ -86,7 +86,7 @@ download: false
 
 ---
 
-# 曾经存在的非议
+# 争议
 
 - HTML体积会变大
 
@@ -129,25 +129,157 @@ https://windicss.org/utilities/general/variants.html
 - 客观地说，Atomic CSS 解决了 Semantic CSS 的大部分问题，即代码重复、特异性、增加代码输出或复杂的选择器等。 因此，原子 CSS 被证明是语义 CSS 的有效替代品。
 
 ---
+
+# 概念
+
+> 本质上，你可以将原子化的 CSS 框架理解为这类 CSS 的统称：
+
+```css
+.m-0 {
+  margin: 0;
+}
+.text-red {
+  color: red;
+}
+.bg-red {
+	background-color: red;
+}
+```
+
+目前主流的工具有 [Tailwind CSS](https://tailwindcss.com/), [UnoCSS](https://uno.antfu.me/), [Windi CSS](https://cn.windicss.org/)，[Tachyons](https://tachyons.io/)，也有一些UI组件库提供了一些这样的Class，如[Bootstrap](https://getbootstrap.com/docs/5.1/utilities/api/)，[Quasar](https://quasar.dev/)，[Primefaces](https://www.primefaces.org/primeflex/margin)，[Chakra UI](https://chakra-ui.com/docs/features/style-props)等。
+
+---
+
+# 原子化 CSS 的工作原理
+
+制作原子化 CSS 的传统方案其实就是提供所有你可能需要用到的 CSS 工具。例如，你可能会用预处理器（这里选用的是 SCSS）生成如下代码：
+
+```scss
+// style.scss
+
+@for $i from 1 through 10 {
+  .m-#{$i} {
+    margin: $i / 4 rem;
+  }
+}
+```
+
+编译结果为：
+
+```css
+.m-1 { margin: 0.25 rem; }
+.m-2 { margin: 0.5 rem; }
+/* ... */
+.m-10 { margin: 2.5 rem; }
+```
+
+---
+
+# 问题
+
+现在我们可以直接使用 **`class="m-1"`** 来设置边距。但正如所见，用这种方法时，我们不能使用除了 1 到 10 之外的边距，而且，即使你只使用了其中一条 CSS 规则，但还是要为其余几条规则的文件体积买单。如果之后你还想支持不同的 margin 方向，使用比如 **`mt`** 代表 **`margin-top`**，**`mb`** 代表 **`margin-bottom`** 等，加上这 4 个方向以后，你的 CSS 大小会变成原来的 5 倍。如果再有使用到像 **`:hover`** 和 **`:focus`** 这样的伪类时，体积还会得更变大。以此类推，每多加一个工具类，往往意味着你 CSS 文件的大小也会随之增加。这也就是为什么传统的 Tailwind 生成的 CSS 文件会有数 MB 的大小。
+
+为了解决这个问题，Tailwind 通过使用 [PurgeCSS](https://purgecss.com/) 来扫描你的大包产物并删除你不需要的规则。这得以使其在生产环境中 CSS 文件缩减为几 KB。然而，请注意，这个清除操作仅在生成构建下有效，而开发环境下仍要使用包含了所有规则巨大的 CSS 文件。这在 Webpack 中表现可能并不明显，但在 Vite 中却有着巨大的影响，毕竟其他内容的加载都非常快。
+
+---
+layout: two-cols
+---
+# Traditional
+<img class="h-2/3 w-full mr-2" src="https://antfu.me/images/unocss-traditional-way.png" alt="traditional" />
+
+::right::
+
+# On-Demand
+<img class="h-2/3 w-full" src="https://antfu.me/images/unocss-on-demand-way.png" alt="on-demand" />
+
+---
+layout: intro
+---
+
+# 结论
+
+> 通过调换 "生成" 和 "扫描" 的顺序，"按需" 会为你节省浪费的计算开销和传输成本，同时可以灵活地实现预生成无法实现的动态需求。另外，这种方法可以同时在开发和生产中使用，提供了一致的开发体验，使得 HMR (Hot Module Replacement, 热更新) 更加高效。
+
+---
+
+# 简单实现原理
+
+Windi CSS 和 Tailwind JIT 都采用了预先扫描源代码的方式来实现按需生成，简单代码示例：
+
+```jsx
+import glob from 'fast-glob'
+import { promises as fs } from 'fs'
+
+// 通常这个是可以配置的
+const include = ['src/**/*.{jsx,tsx,vue,html}']
+
+async function scan() {
+  const files = await glob(include)
+
+  for (const file of files) {
+    const content = await fs.readFile(file, 'utf8')
+    // 将文件内容传递给生成器并配对 class 的使用情况
+  }
+}
+
+await scan()
+// 扫描会在构建/服务器启动前完成
+await buildOrStartDevServer()
+```
+
+---
+
+为了在开发期间提供 HMR，通常会启动一个 [文件系统监听器](https://github.com/paulmillr/chokidar)：
+
+```jsx
+import chokidar from 'chokidar'
+
+chokidar.watch(include).on('change', (event, path) => {
+  // 重新读取文件
+  const content = await fs.readFile(file, 'utf8')
+  // 将新的内容重新传递给生成器
+  // 清除 CSS 模块的缓存并触发 HMR 事件
+})
+```
+
+<br />
+<br />
+
+> 如果是新项目，推荐使用UnoCSS或者WindiCSS，具体特性可去官网阅读文档。
+
+---
 layout: 'center'
 class: 'text-center'
 ---
 
 # 主流技术
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-3 gap-4 place-items-center mt-8">
   <div><TailwindCSS /></div>
   <div><WindiCSS /></div>
   <div><UnoCSS /></div>
 </div>
 
 ---
+
+# Compare
+
+| **_TailwindCSS_(2017.11.02)** | **_WindiCSS_(2020.12.29)** | **_UnoCSS_(2021.10.23)** 
+| --- | --- | --- |
+| 公司驱动开发 | 个人主导+社区驱动开发 | 个人主导+社区驱动开发 |
+| 依赖 **PostCSS**, **autoprefixer** | **0** 依赖 | **0** 依赖
+| 4883 <IcOutlineCommit />, 251 <PhUsersBold />, 2.8M <CarbonColumnDependency /> | 941 <IcOutlineCommit />, 54 <PhUsersBold />, 10.6k <CarbonColumnDependency /> | 1800 <IcOutlineCommit />, 133 <PhUsersBold />, 6.7k <CarbonColumnDependency />
+| DX **bad** | DX **better** | DX *best* |
+| Tailwind JIT 是一个 postcss 插件，它启动文件系统观察器来扫描源代码，以便按需生成 CSS | Windi CSS 是一个独立的编译器，没有依赖项，可以在任何地方工作。 不同的构建工具/框架都有插件，DX很酷。 | UnoCSS 是一个Atomic CSS 引擎,灵活性和性能最好，所有功能通过预设提供,有 Tailwind CSS、Windi CSS、Bootstrap、Tachyon 等超集。
+| <TablerBusinessplan />: Refactoring UI, tailwindUI, headlessUI, heroicons | Poor | Poor
+
+---
 layout: 'center'
 class: 'text-center'
 ---
 
-#
+# 
 
-<div grid="~ place-center h-full" text="6xl blue-500">
+<div grid="~ place-items-center h-full" text="6xl blue-500">
  Live Code
 </div>
