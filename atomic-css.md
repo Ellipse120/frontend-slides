@@ -270,7 +270,7 @@ class: 'text-center'
 | 依赖 **PostCSS**, **autoprefixer** | **0** 依赖 | **0** 依赖
 | 4883 <IcOutlineCommit />, 251 <PhUsersBold />, 2.8M <CarbonColumnDependency /> | 941 <IcOutlineCommit />, 54 <PhUsersBold />, 10.6k <CarbonColumnDependency /> | 1800 <IcOutlineCommit />, 133 <PhUsersBold />, 6.7k <CarbonColumnDependency />
 | DX **bad** | DX **better** | DX *best* |
-| Tailwind JIT 是一个 postcss 插件，它启动文件系统观察器来扫描源代码，以便按需生成 CSS | Windi CSS 是一个独立的编译器，没有依赖项，可以在任何地方工作。 不同的构建工具/框架都有插件，DX很酷。 | UnoCSS 是一个Atomic CSS 引擎,灵活性和性能最好，所有功能通过预设提供,有 Tailwind CSS、Windi CSS、Bootstrap、Tachyon 等超集。
+| Tailwind JIT: postcss 插件，它启动文件系统观察器来扫描源代码，以便按需生成 CSS | WindiCSS: 独立的编译器，0依赖，可以在任何地方工作。 构建工具、框架插件丰富 | UnoCSS: Atomic CSS 引擎,灵活性和性能最好，有TailwindCSS, WindiCSS, Bootstrap超集。
 | <TablerBusinessplan />: Refactoring UI, tailwindUI, headlessUI, heroicons | Poor | Poor
 
 ---
