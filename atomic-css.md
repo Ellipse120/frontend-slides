@@ -66,9 +66,77 @@ download: false
 
 - 体积
 
+<br />
+
+> 大型项目定义：
+
+1. 项目周期大于3个月
+2. 项目至少3个前端
 ---
 
-# 本文讨论的内容
+# __Good practices__
+
+> 一系列最佳实践，非官方
+
+- 少用!import
+
+- 少用id选择器
+
+- 减少嵌套
+
+- 避免模仿 HTML 结构
+
+---
+
+# __CSS-Processors__
+
+- SASS 2006
+
+- LESS 2009
+
+- STYLUS 2010
+
+- POSTCSS 2013
+
+---
+
+# __Methodologies and Semantics__
+
+- Components： OOCSS
+
+- Naming conventions: BEM(2010)
+
+- High-level architecture: SMACSS(2011), ITCSS(2014) as solutions for structuring application-wide CSS code;
+
+- Semantic CSS: Foundation, Bootstrap, Semantic UI, UIKit, Bulma and many more
+
+---
+
+# __Styles Encapsulation__
+
+> Styles encapsulation became an industry-standard pretty fast and represents the end of global CSS.
+
+- Scoped CSS(2011)
+
+- CSS Modules(2015)
+
+- Shadow DOM(2016), it didn't get enough adoption, and it was deprecated in 2018
+
+· Next.js: CSS Modules
+
+· React: CSS Modules
+
+· Vue.js: Scoped CSS and CSS Modules
+
+· Angular: Emulated(Similar to ), ShadowDOM
+
+· Svelte: Scoped CSS
+
+· Gatsby: CSS Modules
+
+---
+
+# __Atomic CSS__
 
 - Atomic CSS 概述，基本原则
 
