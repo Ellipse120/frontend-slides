@@ -7,12 +7,13 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "0.36.10",
+    "@slidev/cli": "0.42.5",
     "@slidev/theme-apple-basic": "^0.20.0",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.1.13",
     "@iconify-json/file-icons": "^1.1.2",
     "@iconify-json/fluent": "^1.1.15",
     "@iconify-json/ic": "^1.1.9",

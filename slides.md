@@ -24,7 +24,7 @@ css: unocss
 download: false
 ---
 
-# 前端概览
+# 前 端 概 览
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -32,7 +32,7 @@ download: false
   </span>
 </div>
 
-<!-- 
+<!--
 1. 感谢公司领导提供一个这样的机会，可以跟大家做这个分享。
 
 2. 简单自我介绍
@@ -59,7 +59,7 @@ image: https://images.unsplash.com/photo-1591267990439-bc68529677c3?ixlib=rb-1.2
 
 7. 未来
 
-<!-- 
+<!--
 今天我会按照以上顺序进行分享。。。
  -->
 
@@ -154,39 +154,42 @@ layout: two-cols
 
 # 怎么做
 
-- HTML(超文本标记语言 HyperText Markup Language)
+- HTML(HyperText Markup Language)
 
-- CSS(层叠样式表 Cascading Style Sheets)
+- CSS(Cascading Style Sheets)
 
 - JavaScript
 
 - Framework(Vuejs, Angular, React, etc)
 
-- UI(用户界面 User Interface)
+- UI(User Interface)
 
-- UX(用户体验 User Experience)
+- UX(User Experience)
 
-- VCS(版本控制 Version Control System)
+- VCS(Version Control System)
 
 ::right::
 
 # 说明
 
-- 开发网站所需的基本构建块，一种标记语言
+<v-click>
 
-- 为文档创建布局、颜色、样式、字体样式的语言
+- 超文本标记语言, 开发网站所需的基本构建块
 
-- 确定页面能做什么的开发人员的编程语言
+- 层叠样式表, 负责布局、颜色、样式、字体的语言
+
+- 让网站可以由静态转为动态的语言
 
 - 用于一致、高效地开发软件的技术
 
-- 定义网页的布局
+- 用户界面, 定义网页的布局
 
-- 用户与应用程序的交互方式
+- 用户体验, 定义用户与应用程序的交互方式
 
-- 跟踪和控制源代码更改迭代的过程，如Git, SVN, CVS
+- 版本控制, 管理源代码迭代的过程，如Git, SVN
+</v-click>
 
-<!-- 
+<!--
 HTML：是一种标记语言，在HTML5之前，有XHTML, DHTML, SHTML 等不同的实现
 
 CSS: 为结构化文档（如 HTML 文档或 XML 应用）添加样式（字体、间距和颜色等）的计算机语言。Preprocesser预处理器，SCSS，LESS，Stylus，PostCSS，大多数 CSS 预处理器会增加一些原生 CSS 不具备的特性，例如代码混合，循环，IF/ELSE，嵌套选择器，继承选择器等。这些特性让 CSS 的结构更加具有可读性且易于维护。
@@ -218,7 +221,7 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 - 解决问题的能力
 
-<!-- 
+<!--
 时间管理：需要做任务拆分，任务估时，任务完成时间等，还需要处理中断事件带来的时间消耗，比如穿插着做做核酸，开开会，参加节日活动等。
 
 沟通：与同事沟通应注意双方理解、认知的不同，领域的不同，尽量调整语言来达成共识，如跟项目经理的沟通、UI、后端、测试同事的沟通，都应该尽量减少自己专业词汇的出现
@@ -233,19 +236,19 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 # 技术栈
 
-- Language: [<logos-ecma />ES6 +](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/), [<VscodeIconsFileTypeTypescriptOfficial />TypeScript](https://www.typescriptlang.org/)
+- Language: [<logos-ecma /> ES2015+](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/), [<VscodeIconsFileTypeTypescriptOfficial /> TypeScript](https://www.typescriptlang.org/)
 
-- Framework: [<VscodeIconsFileTypeVue />Vuejs 2](https://v2.vuejs.org/), [<LogosNuxtIcon />Nuxt 3](https://v3.nuxtjs.org/)
+- Framework: [<VscodeIconsFileTypeVue /> Vuejs](https://vuejs.org/), [<LogosNuxtIcon /> Nuxt](https://nuxt.com/)
 
-- Build: [<LogosWebpack />Webpack 4](https://v4.webpack.js.org/concepts/), [<LogosVitejs />Vite 2](https://vitejs.dev/), [<LogosRollupjs />Rollup](https://rollupjs.org/), [<LogosEsbuild />esbuild](https://esbuild.github.io/) 
+- Build: [<LogosVitejs /> Vite](https://vitejs.dev/), [<LogosWebpack /> Webpack 4](https://v4.webpack.js.org/concepts/), [<LogosRollupjs /> Rollup](https://rollupjs.org/), [<LogosEsbuild /> Esbuild](https://esbuild.github.io/)
 
-- UI: [<LogosElement />ElementUI](https://element.eleme.cn/#/zh-CN/component/installation), [<PrimePrime class="text-blue-500 text-xl" />PrimeVue](https://www.primefaces.org/primevue/)
+- UI: [<DeviconQuasar /> Quasar](https://quasar.dev/) , [<LogosElement /> ElementUI](https://element.eleme.cn/#/zh-CN/component/installation), [<PrimePrime class="text-blue-500 text-1.5rem" /> PrimeVue](https://www.primefaces.org/primevue/)
 
-- CSS: [<FileIconsWindi class="text-blue-400" />WindiCSS](https://windicss.org/), [<LogosUnocss />UnoCSS](https://uno.antfu.me/), [<LogosTailwindcssIcon />TailwindCSS 2](https://v2.tailwindcss.com/)
+- CSS: [<LogosUnocss /> UnoCSS](https://uno.antfu.me/), [<FileIconsWindi class="text-blue-400" /> ~~WindiCSS~~](https://windicss.org/), [<LogosTailwindcssIcon /> TailwindCSS](https://tailwindcss.com/)
 
-- Charts: [<SimpleIconsApacheecharts class="text-red-600" />ECharts](https://echarts.apache.org/), [<LogosHighcharts />Highcharts](https://www.highcharts.com/)
+- Charts: [<SimpleIconsApacheecharts class="text-red-600" /> ECharts](https://echarts.apache.org/), [<LogosHighcharts /> Highcharts](https://www.highcharts.com/)
 
-- Utils: [<LogosLodash />Lodash](https://lodash.com/), [Date-fns](https://date-fns.org/), [AntV X6](https://antv-x6.gitee.io/zh), [<IconParkOutlineEarth class="text-green-600" />ArcGIS](https://developers.arcgis.com/)
+- Utility: [<LogosLodash /> Lodash](https://lodash.com/), [<DateFnsLogo />](https://date-fns.org/), [<AntvLogo /> X6](https://antv-x6.gitee.io/zh), [<IconParkOutlineEarth class="text-green-600" /> Arc GIS](https://developers.arcgis.com/)
 
 ---
 
@@ -253,7 +256,7 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer)<uim-rocket v-motion-fade class="text-xl text-green-500 mx-2" />
 
-- [JavaScript.INFO](https://javascript.info/)
+- [JavaScript.INFO](https://javascript.info/)<uim-rocket v-motion-fade class="text-xl text-green-500 mx-2" />
 
 - [Javascript Tutorial](https://www.javascripttutorial.net/)
 
@@ -263,9 +266,9 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 
 - [CSS Tricks](https://css-tricks.com/)
 
-- [CodePen](https://codepen.io/trending)
+- [CodePen](https://codepen.io/trending)<uim-rocket v-motion-fade class="text-xl text-green-500 mx-2" />
 
-- [Vue2 Style Guide](https://v2.vuejs.org/v2/style-guide/)
+- [Frontend Roadmap](https://roadmap.sh/frontend)<uim-rocket v-motion-fade class="text-xl text-green-500 mx-2" />
 
 - [以太坊](https://ethereum.org/)
 
@@ -285,8 +288,8 @@ VCS: 公司目前使用Git作为代码管理工具，版本控制系统是帮助
 WebGL:
 GIS, BIM etc
 
-AI: 
-Voice Commands, Smart Recommendation Algorithms, Automated Coding 
+AI:
+Voice Commands, Smart Recommendation Algorithms, Automated Coding, ChatGPT
 
 AR/VR
 
@@ -307,16 +310,27 @@ https://www.tensorflow.org/js/demos
 Automated Coding
 [Github Copilot](https://github.com/features/copilot), [Tabnine](https://www.tabnine.com/)
 
-GIS 
+GIS
 [ArcGIS](https://esri.github.io/building-viewer/)
 -->
 
 ---
 layout: center
+
+preload: false
 ---
+
 
 #
 
-<h1>感谢
+<h1
+  v-motion-roll-bottom 
+>期 待 你 们 的 加 入
 <twemoji:winking-face class="ml-4 animate-pulse" />
 </h1>
+
+<!-- ---
+
+# Demo
+
+<Demo/> -->
